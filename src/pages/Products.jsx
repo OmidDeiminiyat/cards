@@ -4,7 +4,7 @@ import { CartContext } from "../context/CartContext";
 export const Products = () => {
     const [products, setProducts] = useState()
     
-    const {cartData} = useContext(CartContext)
+    const {cartData, addToCart} = useContext(CartContext)
 
     console.log('Cart data is:', cartData);
     useEffect(()=> {
@@ -22,9 +22,9 @@ export const Products = () => {
                     <figure>
                         <h4>{item.title}</h4>
                         <p>{item.price}</p>
-                        <button>Add to cart</button>
+                        <button onClick={() => addToCart(item)}>Add to cart</button>
                     </figure>
-                )
+                );
              })}
         </section>
         );
