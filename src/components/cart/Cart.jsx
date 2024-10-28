@@ -17,7 +17,7 @@ export const Card = () => {
                         <h5>{item.title}</h5>
                         <p>{item.price}</p>
 
-                        <div style={{display: "grid"}}><button>-</button><p>{item.quantity}</p><button>+</button></div> 
+                        <div style={{display: "grid"}}><button onClick={() => subtractFromCart(item)}  >-</button><p>{item.quantity}</p><button onClick={() => addToCart(item)} >+</button></div> 
                         <p>total {item.price + item.quantity}</p>
                         <button onClick={() => addToCart(item)}></button>
                         <button onClick={()=> removeFromCart(item)} >Remove</button>
