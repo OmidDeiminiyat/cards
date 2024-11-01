@@ -1,7 +1,13 @@
+import { ShopCard } from "../components/shopCard/ShopCard";
+import { Cards } from "../components/threeCard/Card";
+import { Header } from "../header/Header";
+
 export const Home = () => {
     return (
     <section>
-         <h1>Home</h1>
+        <Header/>
+        <Cards/>
+        <ShopCard/>
     </section>
     );
 };

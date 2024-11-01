@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { SiV } from "react-icons/si";
 import { CartContext } from "../../context/CartContext";
+import  style  from "./cart.module.scss";
 
 export const Card = () => {
 
@@ -9,8 +10,8 @@ export const Card = () => {
     
     return(
         <>
-            <h5>Cart</h5>
-            <div style={{display: "grid", border: "1px solid black"}} >
+            
+            <div className={style.myCard} >
                 {cartData?.map((item) => {
                     return(
                        <div style={{display: "flex", flexDirection: "row" }} >

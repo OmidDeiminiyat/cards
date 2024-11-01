@@ -1,0 +1,13 @@
+@import './../../helper/fonts.scss';
+.shopCard {
+    text-align: center;
+    h3{
+        font-family: "Licorice", cursive;
+        font-weight: 400;
+        font-size: 90px;
+    }
+    p{
+        width: 60%;
+        margin-left: 20%;
+    }
+}

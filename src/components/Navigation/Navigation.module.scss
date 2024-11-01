@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import './../../helper/colors.scss';
+.myNavbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $headerBackground;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    a{
+        text-decoration: none;
+    }
+
+    h1{
+        font-family: "Inspiration", cursive;
+        font-weight: 400;
+        font-size: 48px;
+        margin: 0;
+        padding: 0;
+        color: $headerH1;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        li{
+            margin: 0 12px 0 12px;
+            list-style: none;
+            &:nth-child(1){
+                color: $headerH1;
+                border: 1px solid $headerH1;
+                text-align: center;
+                border-radius: 8px;
+                padding: 3px 9px 0 9px;
+            }
+        }
+    }
+}
